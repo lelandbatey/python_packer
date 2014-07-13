@@ -6,6 +6,21 @@ Python file. It's intended as a simple and dirty way of distributing a python
 project for end-users.
 
 
+
+Cool Example
+============
+
+This will create a single distributable file of `python_packer` itself:
+
+	mkdir ../expypack
+	python filePacker.py --include * --output-dir python_packer --import-name filePacker > ../expypack/pypack.py
+	cd ../expypack
+	python pypack.py
+
+This may give you a better handle on how Python Packer actually works.
+
+
+
 How it Works
 ============
 
@@ -25,7 +40,6 @@ Example file structure after running the above example command:
 	`-- example_output_dir
 	    `-- test_program.py
 	    
-
 
 
 
